@@ -891,3 +891,15 @@ navigationLinks.forEach(link => {
     });
 
 });
+window.addEventListener("load", () => {
+
+    const loadingScreen =
+        document.getElementById("loadingScreen");
+
+    setTimeout(() => {
+
+        loadingScreen.classList.add("hide");
+
+    }, 900);
+
+});

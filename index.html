@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Food Hub | Taste Worth Remembering</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+  <div class="logo">
+    <span>🍴</span> Food Hub
+  </div>
+
+
+  <!-- Hamburger -->
+
+  <button
+    class="menu-toggle"
+    id="menuToggle"
+    aria-label="Open navigation menu"
+  >
+    ☰
+  </button>
+
+
+  <!-- Navigation -->
+
+  <nav id="navLinks">
+
+    <a href="#home">Home</a>
+
+    <a href="#menu">Menu</a>
+
+    <a href="#recommender">What to Eat?</a>
+
+    <a href="#about">About</a>
+
+    <a href="#why-us">Why Us</a>
+
+    <a href="#contact">Contact</a>
+
+    <a href="#reservation" class="mobile-reserve">
+      Reserve Table
+    </a>
+
+  </nav>
+
+
+  <!-- Reserve -->
+
+  <a
+    href="#reservation"
+    class="nav-btn desktop-reserve"
+  >
+    Reserve Table
+  </a>
+
+
+  <!-- Dark Mode -->
+
+  <button
+    id="themeToggle"
+    class="theme-toggle"
+  >
+    🌙
+  </button>
+
+
+  <!-- Cart -->
+
+  <button
+    class="cart-btn"
+    id="cartBtn"
+  >
+    🛒 Cart <span id="cartCount">0</span>
+  </button>
+
+</header>
+
+  <!-- ================= HERO ================= -->
+
+  <section id="home" class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+      <div class="hero-badge">
+        ✦ Authentic Indian Cuisine
+      </div>
+
+      <h1>
+        A Taste Worth
+        <span>Remembering</span>
+      </h1>
+
+      <p>
+        Authentic flavors, fresh ingredients and unforgettable
+        dining experiences — all under one roof.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="#menu" class="btn primary-btn">
+          Explore Menu →
+        </a>
+
+        <a href="#reservation" class="btn secondary-btn">
+          Reserve a Table
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= INTRO ================= -->
+
+  <section class="intro-section">
+
+    <p class="small-title">WELCOME TO FOOD HUB</p>
+
+    <h2>
+      Where Every Dish Tells
+      <span>A Story</span>
+    </h2>
+
+    <p>
+      From traditional Indian recipes to modern culinary creations,
+      every dish at Food Hub is prepared with passion, quality
+      ingredients and a love for great food.
+    </p>
+
+  </section>
+
+
+  <!-- ================= MENU ================= -->
+
+  <!-- ================= MENU ================= -->
+
+<section id="menu" class="menu-section">
+
+  <div class="section-heading">
+
+    <p class="small-title">OUR SPECIALTIES</p>
+
+    <h2>Discover Our <span>Menu</span></h2>
+
+    <p>
+      Carefully crafted dishes made to satisfy every craving.
+    </p>
+
+  </div>
+
+
+  <!-- Search -->
+
+  <div class="menu-search">
+
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="🔍 Search for a dish..."
+    >
+
+  </div>
+
+
+  <!-- Categories -->
+
+  <div class="menu-filters">
+
+    <button class="filter-btn active" data-category="all">
+      All
+    </button>
+
+    <button class="filter-btn" data-category="starter">
+      Starters
+    </button>
+
+    <button class="filter-btn" data-category="main">
+      Main Course
+    </button>
+
+    <button class="filter-btn" data-category="dessert">
+      Desserts
+    </button>
+
+    <button class="filter-btn" data-category="drink">
+      Drinks
+    </button>
+
+  </div>
+
+
+  <!-- Menu Items -->
+
+  <div class="menu-items">
+
+
+    <!-- 1. Paneer Tikka -->
+
+    <div class="food-card" data-category="starter">
+
+      <div class="food-image">
+
+        <img
+          src="images/paneer.jpg"
+          alt="Paneer Tikka"
+        >
+
+        <span class="popular">
+          POPULAR
+        </span>
+
+      </div>
+
+      <div class="food-info">
+
+        <div class="food-title">
+
+          <h3>Paneer Tikka</h3>
+
+          <span>$12</span>
+
+        </div>
+
+        <p>
+          Grilled paneer cubes marinated with
+          yogurt, herbs and spices.
+        </p>
+
+        <div class="rating">
+          ⭐⭐⭐⭐⭐
+        </div>
+
+        <button class="order-btn">
+          Add to Order +
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- 2. Chicken Tikka -->
+
+    <div class="food-card" data-category="starter">
+
+      <div class="food-image">
+
+        <img
+          src="images/chicken-tikka.jpg"
+          alt="Chicken Tikka"
+        >
+
+      </div>
+
+      <div class="food-info">
+
+        <div class="food-title">
+
+          <h3>Chicken Tikka</h3>
+
+          <span>$14</span>
+
+        </div>
+
+        <p>
+          Tender chicken pieces grilled with
+          aromatic spices.
+        </p>
+
+        <div class="rating">
+          ⭐⭐⭐⭐☆
+        </div>
+
+        <button class="order-btn">
+          Add to Order +
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- 3. Butter Chicken -->
+
+    <div class="food-card" data-category="main">
+
+      <div class="food-image">
+
+        <img
+          src="images/butter-chicken-.jpg"
+          alt="Butter Chicken"
+        >
+
+        <span class="popular">
+          BEST SELLER
+        </span>
+
+      </div>
+
+      <div class="food-info">
+
+        <div class="food-title">
+
+          <h3>Butter Chicken</h3>
+
+          <span>$18</span>
+
+        </div>
+
+        <p>
+          Rich and creamy chicken curry prepared
+          with aromatic Indian spices.
+        </p>
+
+        <div class="rating">
+          ⭐⭐⭐⭐⭐
+        </div>
+
+        <button class="order-btn">
+          Add to Order +
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- 4. Biryani -->
+
+    <div class="food-card" data-category="main">
+
+      <div class="food-image">
+
+        <img
+          src="images/biryani.jpeg"
+          alt="Hyderabadi Biryani"
+        >
+
+        <span class="popular">
+          CHEF'S CHOICE
+        </span>
+
+      </div>
+
+      <div class="food-info">
+
+        <div class="food-title">
+
+          <h3>Hyderabadi Biryani</h3>
+
+          <span>$15</span>
+
+        </div>
+
+        <p>
+          Fragrant basmati rice cooked with
+          aromatic spices.
+        </p>
+
+        <div class="rating">
+          ⭐⭐⭐⭐⭐
+        </div>
+
+        <button class="order-btn">
+          Add to Order +
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- 5. Butter Naan -->
+
+    <div class="food-card" data-category="main">
+
+      <div class="food-image">
+
+        <img
+          src="images/naan.jpg"
+          alt="Butter Naan"
+        >
+
+      </div>
+
+      <div class="food-info">
+
+        <div class="food-title">
+
+          <h3>Butter Naan</h3>
+
+          <span>$5</span>
+
+        </div>
+
+        <p>
+          Soft and buttery Indian flatbread
+          baked in a traditional tandoor.
+        </p>
+
+        <div class="rating">
+          ⭐⭐⭐⭐☆
+        </div>
+
+        <button class="order-btn">
+          Add to Order +
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- 6. Gulab Jamun -->
+
+    <div class="food-card" data-category="dessert">
+
+      <div class="food-image">
+
+        <img
+          src="images/gulab-jamun.jpg"
+          alt="Gulab Jamun"
+        >
+
+      </div>
+
+      <div class="food-info">
+
+        <div class="food-title">
+
+          <h3>Gulab Jamun</h3>
+
+          <span>$7</span>
+
+        </div>
+
+        <p>
+          Soft milk-based dumplings soaked in
+          warm sugar syrup.
+        </p>
+
+        <div class="rating">
+          ⭐⭐⭐⭐⭐
+        </div>
+
+        <button class="order-btn">
+          Add to Order +
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- 7. Chocolate Brownie -->
+
+    <div class="food-card" data-category="dessert">
+
+      <div class="food-image">
+
+        <img
+          src="images/brownie.jpg"
+          alt="Chocolate Brownie"
+        >
+
+      </div>
+
+      <div class="food-info">
+
+        <div class="food-title">
+
+          <h3>Chocolate Brownie</h3>
+
+          <span>$8</span>
+
+        </div>
+
+        <p>
+          Warm chocolate brownie served with
+          a rich chocolate topping.
+        </p>
+
+        <div class="rating">
+          ⭐⭐⭐⭐☆
+        </div>
+
+        <button class="order-btn">
+          Add to Order +
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- 8. Mango Lassi -->
+
+    <div class="food-card" data-category="drink">
+
+      <div class="food-image">
+
+        <img
+          src="images/mango-lassi.jpg"
+          alt="Mango Lassi"
+        >
+
+      </div>
+
+      <div class="food-info">
+
+        <div class="food-title">
+
+          <h3>Mango Lassi</h3>
+
+          <span>$6</span>
+
+        </div>
+
+        <p>
+          Refreshing creamy mango yogurt drink
+          with a hint of cardamom.
+        </p>
+
+        <div class="rating">
+          ⭐⭐⭐⭐⭐
+        </div>
+
+        <button class="order-btn">
+          Add to Order +
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- 9. Masala Chai -->
+
+    <div class="food-card" data-category="drink">
+
+      <div class="food-image">
+
+        <img
+          src="images/masala-chai.jpg"
+          alt="Masala Chai"
+        >
+
+      </div>
+
+      <div class="food-info">
+
+        <div class="food-title">
+
+          <h3>Masala Chai</h3>
+
+          <span>$4</span>
+
+        </div>
+
+        <p>
+          Traditional Indian tea infused with
+          aromatic spices.
+        </p>
+
+        <div class="rating">
+          ⭐⭐⭐⭐⭐
+        </div>
+
+        <button class="order-btn">
+          Add to Order +
+        </button>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+  <!-- No Results -->
+
+  <p id="noResults" class="no-results">
+    😕 No dishes found. Try another search.
+  </p>
+
+</section>
+
+<!-- ================= FOOD RECOMMENDER ================= -->
+
+<section id="recommender" class="recommender-section">
+
+  <div class="section-heading">
+
+    <p class="small-title">SMART DINING</p>
+
+    <h2>
+      Not Sure What To Eat?
+      <span>Let Us Help!</span>
+    </h2>
+
+    <p>
+      Tell us what you're craving and we'll find a dish
+      that matches your mood.
+    </p>
+
+  </div>
+
+
+  <div class="recommender-card">
+
+    <div class="ai-icon">
+      🤖
+    </div>
+
+    <h3>What Should I Eat?</h3>
+
+    <p class="recommender-subtitle">
+      Answer three quick questions.
+    </p>
+
+
+    <!-- Question 1 -->
+
+    <div class="question">
+
+      <h4>1. What's your preference?</h4>
+
+      <div class="option-group">
+
+        <button class="food-option" data-type="veg">
+          🌿 Vegetarian
+        </button>
+
+        <button class="food-option" data-type="nonveg">
+          🍗 Non-Vegetarian
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- Question 2 -->
+
+    <div class="question">
+
+      <h4>2. What are you in the mood for?</h4>
+
+      <div class="option-group">
+
+        <button class="food-option" data-mood="spicy">
+          🌶️ Spicy
+        </button>
+
+        <button class="food-option" data-mood="comfort">
+          😋 Comfort Food
+        </button>
+
+        <button class="food-option" data-mood="light">
+          🥗 Light & Fresh
+        </button>
+
+        <button class="food-option" data-mood="sweet">
+          🍰 Something Sweet
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- Question 3 -->
+
+    <div class="question">
+
+      <h4>3. How hungry are you?</h4>
+
+      <div class="option-group">
+
+        <button class="food-option" data-hunger="light">
+          😊 Light
+        </button>
+
+        <button class="food-option" data-hunger="normal">
+          🍽️ Normal
+        </button>
+
+        <button class="food-option" data-hunger="very">
+          🔥 Very Hungry
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <button id="recommendBtn" class="recommend-btn">
+
+      ✨ Find My Dish
+
+    </button>
+
+
+    <!-- Recommendation Result -->
+
+    <div id="recommendationResult"
+         class="recommendation-result">
+
+    </div>
+
+  </div>
+
+</section>
+
+
+  <!-- ================= WHY US ================= -->
+
+  <section id="why-us" class="why-section">
+
+    <div class="section-heading">
+
+      <p class="small-title">WHY FOOD HUB?</p>
+
+      <h2>Made With <span>Passion</span></h2>
+
+    </div>
+
+
+    <div class="why-container">
+
+      <div class="why-card">
+
+        <div class="why-icon">🥘</div>
+
+        <h3>Fresh Ingredients</h3>
+
+        <p>
+          We use carefully selected fresh ingredients
+          to create every dish.
+        </p>
+
+      </div>
+
+
+      <div class="why-card">
+
+        <div class="why-icon">👨‍🍳</div>
+
+        <h3>Expert Chefs</h3>
+
+        <p>
+          Our chefs combine traditional recipes with
+          modern culinary techniques.
+        </p>
+
+      </div>
+
+
+      <div class="why-card">
+
+        <div class="why-icon">🌿</div>
+
+        <h3>Authentic Flavors</h3>
+
+        <p>
+          Experience the rich taste of authentic
+          Indian spices and recipes.
+        </p>
+
+      </div>
+
+
+      <div class="why-card">
+
+        <div class="why-icon">❤️</div>
+
+        <h3>Made With Love</h3>
+
+        <p>
+          Every meal is prepared with care to make
+          your dining experience special.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= ABOUT ================= -->
+
+  <section id="about" class="about-section">
+
+    <div class="about-image">
+
+      <img src="images/food.jpg" alt="Food Hub Restaurant">
+
+    </div>
+
+
+    <div class="about-content">
+
+      <p class="small-title">OUR STORY</p>
+
+      <h2>
+        More Than Just
+        <span>Food</span>
+      </h2>
+
+      <p>
+        Food Hub is a family-owned restaurant created with
+        one simple idea — great food brings people together.
+      </p>
+
+      <p>
+        Since 1995, we have been serving flavorful dishes
+        prepared with traditional recipes, fresh ingredients
+        and a modern touch.
+      </p>
+
+      <a href="#contact" class="btn primary-btn">
+        Get in Touch →
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= RESERVATION ================= -->
+
+
+<section id="reservation" class="reservation-section">
+
+  <div class="section-heading">
+
+    <p class="small-title">PLAN YOUR VISIT</p>
+
+    <h2>Reserve Your <span>Table</span></h2>
+
+    <p>
+      Make your dining experience special.
+    </p>
+
+  </div>
+
+
+  <form class="reservation-form" id="reservationForm">
+
+    <input
+      type="text"
+      id="name"
+      placeholder="Your Name"
+      required
+    >
+
+
+    <input
+      type="email"
+      id="email"
+      placeholder="Email Address"
+      required
+    >
+
+
+    <input
+      type="date"
+      id="date"
+      required
+    >
+
+
+    <select id="guests" required>
+
+      <option value="">
+        Number of Guests
+      </option>
+
+      <option value="1">1 Guest</option>
+      <option value="2">2 Guests</option>
+      <option value="3">3 Guests</option>
+      <option value="4">4 Guests</option>
+      <option value="5+">5+ Guests</option>
+
+    </select>
+
+
+    <button
+      type="submit"
+      class="btn primary-btn"
+    >
+      Reserve Table →
+    </button>
+
+  </form>
+
+
+  <!-- SUCCESS MESSAGE -->
+
+  <div
+    id="reservationSuccess"
+    class="reservation-success"
+  >
+
+    <div class="success-icon">
+      ✓
+    </div>
+
+    <h3>
+      Reservation Request Sent! 🎉
+    </h3>
+
+    <p id="successMessage">
+      Thank you! Your table reservation has been received.
+    </p>
+
+    <button id="newReservation">
+      Make Another Reservation
+    </button>
+
+  </div>
+
+</section>
+
+  <!-- ================= CONTACT ================= -->
+
+  <section id="contact" class="contact-section">
+
+    <div class="section-heading">
+
+      <p class="small-title">GET IN TOUCH</p>
+
+      <h2>Let's <span>Connect</span></h2>
+
+    </div>
+
+
+    <div class="contact-container">
+
+      <div class="contact-card">
+
+        <div>📍</div>
+
+        <h3>Visit Us</h3>
+
+        <p>
+          123 Food Street<br>
+          Mumbai, India
+        </p>
+
+      </div>
+
+
+      <div class="contact-card">
+
+        <div>📞</div>
+
+        <h3>Call Us</h3>
+
+        <p>
+          +91 98765 43210
+        </p>
+
+      </div>
+
+
+      <div class="contact-card">
+
+        <div>✉️</div>
+
+        <h3>Email Us</h3>
+
+        <p>
+          contact@foodhub.com
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer>
+
+    <div class="footer-logo">
+      🍴 Food Hub
+    </div>
+
+    <p>
+      Authentic flavors. Memorable experiences.
+    </p>
+
+    <div class="social-links">
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">WhatsApp</a>
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+      © 2026 Food Hub. All rights reserved.
+    </p>
+
+  </footer>
+
+  <!-- ================= CART ================= -->
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <div class="cart-sidebar" id="cartSidebar">
+
+    <div class="cart-header">
+      <h2>🛒 Your Order</h2>
+
+      <button id="closeCart">
+        ✕
+      </button>
+    </div>
+
+    <div id="cartItems" class="cart-items">
+
+      <p class="empty-cart">
+        Your cart is empty.
+      </p>
+
+    </div>
+
+    <div class="cart-footer">
+
+      <div class="cart-total">
+        <span>Total</span>
+        <strong>$<span id="cartTotal">0</span></strong>
+      </div>
+
+      <button class="checkout-btn" id="checkoutBtn">
+        Place Order →
+      </button>
+
+      <button class="clear-cart" id="clearCart">
+        Clear Cart
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+
